@@ -719,7 +719,7 @@ li {
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
-  height: 320px;
+  height: 160px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -830,7 +830,9 @@ li {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgba(39, 67, 75, 0.9);
+  background-color: rgba(39, 67, 75, 0.78);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .nav_desktop {
@@ -1306,6 +1308,8 @@ li {
   padding: 15px;
   border-radius: 20px;
   background-color: rgba(132, 54, 46, 0.49);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .prom.mobile {
@@ -1713,7 +1717,9 @@ li {
 }
 
 .dropdown-list.w--open {
-  background-color: rgba(39, 67, 75, 0.9);
+  background-color: rgba(39, 67, 75, 0.78);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
 }
 
 .icon-2 {
@@ -1748,10 +1754,7 @@ li {
 }
 
 .bx4 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   height: 190px;
   padding-top: 20px;
   padding-bottom: 15px;
@@ -1916,14 +1919,12 @@ li {
 
   .left-navigation.mobile {
     display: block;
-    background-color: rgba(39, 67, 75, 0.67);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(39, 67, 75, 0.72)), to(rgba(39, 67, 75, 0.72))), url('../images/grey-noise-texture.jpg');
-    background-image: linear-gradient(180deg, rgba(39, 67, 75, 0.72), rgba(39, 67, 75, 0.72)), url('../images/grey-noise-texture.jpg');
-    background-position: 0px 0px, 0px 0px;
-    background-size: auto, 125px;
-    opacity: 0.91;
-    -webkit-filter: contrast(124%);
-    filter: contrast(124%);
+    background-color: rgba(39, 67, 75, 0.78);
+    background-image: none;
+    background-position: 0px 0px;
+    background-size: auto;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
   }
 
   .nav-link {
@@ -1942,15 +1943,14 @@ li {
     width: 100vw;
     padding-top: 60px;
     background-color: rgba(39, 67, 75, 0.72);
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(39, 67, 75, 0.72)), to(rgba(39, 67, 75, 0.72))), url('../images/grey-noise-texture.jpg');
-    background-image: linear-gradient(180deg, rgba(39, 67, 75, 0.72), rgba(39, 67, 75, 0.72)), url('../images/grey-noise-texture.jpg');
-    background-position: 0px 0px, 0px 0px;
-    background-size: auto, 400px;
-    background-repeat: repeat, repeat;
-    background-attachment: scroll, scroll;
+    background-image: none;
+    background-position: 0px 0px;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: scroll;
     opacity: 1;
-    -webkit-filter: none;
-    filter: none;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     background-clip: border-box;
     -webkit-text-fill-color: inherit;
   }
@@ -1958,6 +1958,10 @@ li {
   .social-footer {
     position: absolute;
     display: inline-block;
+  }
+
+  .grid-fours {
+    display: block;
   }
 
   .banner {
@@ -2007,7 +2011,7 @@ li {
   }
 
   .stopka {
-    height: 700px;
+    height: 550px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
@@ -2378,10 +2382,6 @@ li {
     margin-right: 0px;
   }
 
-  .stopka {
-    height: 680px;
-  }
-
   .div_links_stopka_right_up {
     margin-left: 0px;
     -webkit-box-orient: vertical;
@@ -2590,7 +2590,7 @@ li {
   }
 
   .stopka {
-    height: 720px;
+    height: 600px;
   }
 
   .div_stopka {
