@@ -1890,34 +1890,13 @@ li {
   transition: background-color 200ms ease, -webkit-transform 200ms ease;
   transition: transform 200ms ease, background-color 200ms ease;
   transition: transform 200ms ease, background-color 200ms ease, -webkit-transform 200ms ease;
-  color: #000;
+  color: #133c49;
   font-weight: 300;
   text-decoration: none;
 }
 
 .link-11:hover {
   background-color: #fff;
-  -webkit-transform: translate(0px, -2px);
-  -ms-transform: translate(0px, -2px);
-  transform: translate(0px, -2px);
-}
-
-.link-11.w--current {
-  margin-top: 3px;
-  margin-bottom: 3px;
-  padding: 10px 20px;
-  border-radius: 9px;
-  background-color: hsla(0, 0%, 94.1%, 0.55);
-  -webkit-transition: background-color 200ms ease, -webkit-transform 200ms ease;
-  transition: background-color 200ms ease, -webkit-transform 200ms ease;
-  transition: background-color 200ms ease, transform 200ms ease;
-  transition: background-color 200ms ease, transform 200ms ease, -webkit-transform 200ms ease;
-  color: #000;
-  text-decoration: none;
-}
-
-.link-11.w--current:hover {
-  background-color: #f0f0f0;
   -webkit-transform: translate(0px, -2px);
   -ms-transform: translate(0px, -2px);
   transform: translate(0px, -2px);
@@ -2017,11 +1996,13 @@ li {
   }
 
   .nav-link {
-    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   .nav-link.down {
     padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 50px;
     font-size: 18px;
     line-height: 0px;
@@ -2031,6 +2012,10 @@ li {
   .nav-menu {
     width: 100vw;
     padding-top: 60px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     background-color: rgba(39, 67, 75, 0.72);
     background-image: none;
     background-position: 0px 0px;
@@ -2165,6 +2150,40 @@ li {
 
   .navbar {
     display: none;
+  }
+
+  .nav_desktop.drop._2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 20px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .nav_desktop._2 {
+    padding-left: 50px;
+    -webkit-transition: letter-spacing 200ms ease, color 200ms ease;
+    transition: letter-spacing 200ms ease, color 200ms ease;
+    font-size: 18px;
+    text-transform: none;
+  }
+
+  .nav_desktop._2:hover {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    letter-spacing: 1.2px;
+  }
+
+  .nav_desktop._2.w--open {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .accordian-wrapper {
@@ -2306,12 +2325,41 @@ li {
     padding-top: 20px;
   }
 
+  .dropdown-list.w--open {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    background-color: transparent;
+    text-align: left;
+  }
+
+  .icon-2._2 {
+    margin-right: 40px;
+  }
+
   .dropdown-list-2 {
     background-color: transparent;
   }
 
+  .dropdown-list-2.w--open {
+    margin-bottom: 20px;
+  }
+
   .div-button-home {
     max-width: 140px;
+  }
+
+  .przerywana {
+    width: 100vw;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    border-bottom: 1px dashed #547b8b;
+  }
+
+  .przerywana._2 {
+    margin-right: 20px;
+    margin-left: 40px;
   }
 }
 
@@ -2664,8 +2712,18 @@ li {
     margin-top: 28px;
   }
 
-  .left-navigation.mobile {
-    width: auto;
+  .nav-link {
+    padding-right: 20px;
+    text-align: center;
+  }
+
+  .nav-link.down {
+    padding-left: 20px;
+  }
+
+  .nav-menu {
+    overflow: scroll;
+    text-align: center;
   }
 
   .banner {
@@ -2690,6 +2748,10 @@ li {
   .logo {
     padding-right: 10px;
     padding-left: 10px;
+  }
+
+  .nav_desktop._2 {
+    padding-left: 20px;
   }
 
   .film-box-button {
@@ -2766,6 +2828,35 @@ li {
 
   .container-badania {
     padding-top: 40px;
+  }
+
+  .icon-2._2 {
+    margin-right: 0px;
+  }
+
+  .text-block-24 {
+    padding-right: 10px;
+  }
+
+  .dropdown-list-2.w--open {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
   }
 
   .bx4 {
